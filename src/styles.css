@@ -100,14 +100,13 @@ body {
       font-size: 1.25rem;
       
   }
-  .output {
+  .output .current-operand {
+    font-size: 1.7rem;
     padding: 0.1rem;
-    
-    .current-operand {
-      font-size: 1.7rem;
     }
-    .previous-operand {
-      font-size: 1.3rem;
+  .output .previous-operand {
+    font-size: 1.3rem;
+    padding: 0.1rem;
     }
-  }
+  
 }

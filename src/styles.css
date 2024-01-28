@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Orbitron:wght@500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  margin: 0;
+  background: linear-gradient(88deg, rgba(80, 193, 207, 0.808), purple);
+  justify-content: center;
+  align-items: center;
+}
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  padding: 5px;
+  background-color: rgb(36, 56, 50);
+  border-radius: 5px;
+}
+.calculator-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin: auto;
+  border-radius: 2em;
+  margin-top: 1em;
+  background-color: rgb(20, 250, 173);
+  p {
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1em;
+    font-family: 'Montserrat Alternates';
+    font-weight: bold;
+    font-size: 1em;
+  }
+}
+
+.calculator-grid > button {
+  font-family: 'Orbitron';
+  cursor: pointer;
+  font-size: 2rem;
+  justify-content: center;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgb(248, 130, 76);
+  margin: 2px;
+  border-radius: 5px;
+}
+.calculator-grid > button:hover {
+  background-color: rgba(35, 238, 211, 0.7);
+}
+.calculator-grid > button:focus {
+  background-color: rgba(237, 166, 247, 0.7);
+}
+
+.span-two{
+  grid-column: span 2;
+}
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.76);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family: 'Montserrat Alternates';
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 2.5rem;
+}
+.output .current-operand {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+}

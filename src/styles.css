@@ -86,3 +86,28 @@ body {
   color: rgb(255, 255, 255);
   font-size: 2.5rem;
 }
+@media (max-width: 900px) {
+  .calculator-box  {
+      width: 95%; /* Adjust the width for smaller screens */
+      height: 98%;
+      padding: 1rem;
+  }
+  .calculator-grid{
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: minmax(6rem, auto) repeat(5, 5rem); 
+  }
+  .calculator-grid > button {
+      font-size: 1.25rem;
+      
+  }
+  .output {
+    padding: 0.1rem;
+    
+    .current-operand {
+      font-size: 1.7rem;
+    }
+    .previous-operand {
+      font-size: 1.3rem;
+    }
+  }
+}
